@@ -27,7 +27,7 @@ function App() {
     <Container>
       <h1 style={{textAlign:"center"}}>Weather App</h1>
       <CreateInput city={city} setCity={setCity} fetchCityWeather={fetchCityWeather}/>
-      <ShowWeather msg={msg} />
+      <ShowWeather msg={msg} city={city}/>
       
       </Container>
     

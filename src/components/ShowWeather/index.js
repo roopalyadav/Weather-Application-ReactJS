@@ -4,7 +4,12 @@ import { Card } from "react-bootstrap";
 const ShowWeather = ({weather, msg, city}) => {
    
   
-
+  if(!city)
+  {
+      msg.title="City";
+      msg.tempe="";
+      msg.desc="";
+  }
    
     
   return (
