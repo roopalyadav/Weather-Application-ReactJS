@@ -10,7 +10,7 @@ function App() {
   const[msg,setMsg]=useState({title:"City", tempe:"", desc:""})
   
   const fetchCityWeather=()=>{
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=40c34732ced6957420958df85b090a64`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=40c34732ced6957420958df85b090a64`)
     .then((response)=>response.json()).then((result)=>{
       console.log(result);
       
